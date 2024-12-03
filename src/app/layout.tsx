@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
 import Footer from '@/components/ui/Shared/Footer/Footer'
 import Header from '@/components/ui/Shared/Header/Header'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'All-Time-gaming - E-Sports Gaming Hub',
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#0a0e17] text-gray-100 min-h-screen flex flex-col`}>
+      <body className={` bg-[#0a0e17] text-gray-100 min-h-screen flex flex-col`}>
         <div className="flex-grow">
           <Header />
           <main>{children}</main>

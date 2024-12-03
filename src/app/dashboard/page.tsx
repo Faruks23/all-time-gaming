@@ -23,7 +23,7 @@ export default function Dashboard() {
             <CardTitle>Team Performance</CardTitle>
           </CardHeader>
           <CardContent>
-            <ResponsiveContainer width="100%" height={200}>
+            {/* <ResponsiveContainer width="100%" height={200}>
               <BarChart data={performanceData}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" />
@@ -32,7 +32,7 @@ export default function Dashboard() {
                 <Bar dataKey="wins" fill="#4CAF50" />
                 <Bar dataKey="losses" fill="#F44336" />
               </BarChart>
-            </ResponsiveContainer>
+            </ResponsiveContainer> */}
           </CardContent>
         </Card>
         
