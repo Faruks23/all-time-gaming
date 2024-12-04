@@ -162,8 +162,27 @@ export default function UserProfilePage() {
                 </div>
                 <div className="bg-[#3a4050] p-4 rounded-lg">
                   <p className="text-sm text-gray-400">K/D Ratio</p>
-                  <p className="text-2xl font-bold">2.1</p>
+                  <p className="text-2xl font-bold">2.5</p>
                 </div>
+              </div>
+            </div>
+
+            {/* Wallet */}
+            <div className="bg-[#2a3040] rounded-lg shadow-lg p-6">
+              <h2 className="text-2xl font-bold mb-4 text-blue-300">Wallet</h2>
+              <div className="bg-[#3a4050] p-4 rounded-lg mb-4">
+                <p className="text-sm text-gray-400">Balance</p>
+                <p className="text-3xl font-bold text-green-400">$250.00</p>
+              </div>
+              <div className="flex space-x-4">
+                <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 flex items-center">
+                  <DollarSign size={20} className="mr-2" />
+                  Deposit
+                </button>
+                <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 flex items-center">
+                  <Settings size={20} className="mr-2" />
+                  Manage
+                </button>
               </div>
             </div>
           </div>

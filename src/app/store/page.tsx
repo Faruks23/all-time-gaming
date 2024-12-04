@@ -82,7 +82,7 @@ export default function StorePage() {
             {products.map((product) => (
               <div key={product.id} className="bg-[#2a3040] rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
                 <div className="relative">
-                  <Image src={product.image} alt={product.name} width={300} height={300} className="w-full" />
+                  <Image src={product.image} alt={product.name} width={300} height={200} className="w-full" />
                   <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1 rounded-bl-lg">
                     <Star className="inline-block mr-1" size={16} />
                     {product.rating}

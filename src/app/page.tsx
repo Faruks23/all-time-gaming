@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Trophy, Zap, ShoppingBag, Star, Users, DollarSign } from 'lucide-react'
+import HexGridAnimation from '@/components/ui/animation/BgAnimation'
 
 export default function Home() {
   return (
@@ -8,13 +9,14 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
+        
           <Image src="/home-hero.jpg" alt="Epic Gaming Background" layout="fill" objectFit="cover" className="opacity-30" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0a0e17] z-10"></div>
         <div className="container mx-auto px-6 relative z-20">
           <div className="text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
-              Welcome to NexusArena
+            <h1 className="text-5xl md:text-7xl uppercase font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+              <span className='text-4xl md:text-5xl'> Welcome</span> to All Time  <span className='text-4xl md:text-5xl'>Gaming</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-200">Dominate the competition, claim your glory!</p>
             <Link href="/signup" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 inline-flex items-center transform hover:scale-105">
@@ -86,7 +88,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
             Gear Up for Victory
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 md:grid-cols-4 gap-6">
             {[1, 2, 3, 4].map((i) => (
               <div key={i} className="bg-[#2a3040] rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
                 <div className="relative">
