@@ -39,7 +39,7 @@ export default function TeamManagement() {
                   <CardTitle className="text-3xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
                     Team Management
                   </CardTitle>
-                  <CardDescription className="text-blue-200">
+                  <CardDescription className="text-blue-200 font-sans">
                     Manage your elite squad and dominate the competition
                   </CardDescription>
                 </div>

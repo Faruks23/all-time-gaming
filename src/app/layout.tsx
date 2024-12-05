@@ -5,10 +5,14 @@ import Link from 'next/link'
 import Footer from '@/components/ui/Shared/Footer/Footer'
 import Header from '@/components/ui/Shared/Header/Header'
 
-// const inter = Inter({ subsets: ['latin'] })
+import { Orbitron } from 'next/font/google';
 
+const orbitron = Orbitron({
+  subsets: ['latin'],
+  weight: ['400', '700'], // Optional: Specify weights
+});
 export const metadata: Metadata = {
-  title: 'All-Time-gaming - E-Sports Gaming Hub',
+  title: 'All-Time-gaming-E-Sports Gaming Hub',
   description: 'Your ultimate destination for e-sports tournaments, challenges, and gaming glory.',
 }
 
@@ -19,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={` bg-[#0a0e17] text-gray-100 min-h-screen flex flex-col`}>
+      <body className={` ${orbitron.className} bg-[#0a0e17] text-gray-100 min-h-screen flex flex-col`}>
         <div className="flex-grow">
           <Header />
           <main>{children}</main>

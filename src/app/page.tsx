@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Trophy, Zap, ShoppingBag, Star, Users, DollarSign } from 'lucide-react'
-import HexGridAnimation from '@/components/ui/animation/BgAnimation'
 
 export default function Home() {
   return (
@@ -16,10 +15,10 @@ export default function Home() {
         <div className="container mx-auto px-6 relative z-20">
           <div className="text-center">
             <h1 className="text-5xl md:text-7xl uppercase font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
-              <span className='text-4xl md:text-5xl'> Welcome</span> to All Time  <span className='text-4xl md:text-5xl'>Gaming</span>
+              <span className=''> Welcome</span> to All Time  <span className=''>Gaming</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-200">Dominate the competition, claim your glory!</p>
-            <Link href="/signup" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 inline-flex items-center transform hover:scale-105">
+            <Link href="/sign-up" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 inline-flex items-center transform hover:scale-105">
               <Zap size={24} className="mr-2" />
               Join the Battle
             </Link>
@@ -43,9 +42,9 @@ export default function Home() {
                     Featured
                   </div>
                 </div>
-                <div className="p-6">
+                <div className="p-6 ">
                   <h3 className="font-bold text-xl mb-2 text-blue-300">Cyber Showdown {i}</h3>
-                  <p className="text-gray-300 mb-4">Battle for supremacy and a $50,000 prize pool!</p>
+                  <p className="text-gray-300 mb-4 font-sans">Battle for supremacy and a $50,000 prize pool!</p>
                   <div className="flex justify-between items-center text-sm text-gray-400 mb-4">
                     <span className="flex items-center"><Users size={16} className="mr-1" /> 128 Teams</span>
                     <span className="flex items-center"><DollarSign size={16} className="mr-1" /> $50,000 Prize</span>
@@ -88,7 +87,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
             Gear Up for Victory
           </h2>
-          <div className="grid md:grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {[1, 2, 3, 4].map((i) => (
               <div key={i} className="bg-[#2a3040] rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
                 <div className="relative">

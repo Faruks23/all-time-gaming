@@ -350,8 +350,8 @@ export default function ChallengePage() {
           </h2>
           <div className="max-w-3xl mx-auto">
             <Tabs defaultValue="general" className="w-full">
-              <TabsList className="grid w-full grid-cols-3">
-                <TabsTrigger value="general">General</TabsTrigger>
+              <TabsList aria-activedescendant='#1a2030' className="grid w-full grid-cols-3">
+                <TabsTrigger  value="general">General</TabsTrigger>
                 <TabsTrigger value="rules">Rules</TabsTrigger>
                 <TabsTrigger value="prizes">Prizes</TabsTrigger>
               </TabsList>
@@ -361,11 +361,11 @@ export default function ChallengePage() {
                     <div className="space-y-4">
                       <div>
                         <h3 className="font-semibold text-blue-300">How do I join a challenge?</h3>
-                        <p className="text-gray-400">Click on the "Join Challenge" button for the challenge you want to participate in. You'll be guided through the registration process.</p>
+                        <p className="text-gray-400 font-sans">Click on the "Join Challenge" button for the challenge you want to participate in. You'll be guided through the registration process.</p>
                       </div>
                       <div>
                         <h3 className="font-semibold text-blue-300">Can I participate in multiple challenges?</h3>
-                        <p className="text-gray-400">Yes, you can join as many challenges as you like, as long as the schedules don't conflict.</p>
+                        <p className="text-gray-400 font-sans">Yes, you can join as many challenges as you like, as long as the schedules don't conflict.</p>
                       </div>
                     </div>
                   </CardContent>
@@ -377,11 +377,11 @@ export default function ChallengePage() {
                     <div className="space-y-4">
                       <div>
                         <h3 className="font-semibold text-blue-300">What are the general rules for challenges?</h3>
-                        <p className="text-gray-400">Each challenge has its own specific rules, but generally, fair play and sportsmanship are expected from all participants.</p>
+                        <p className="text-gray-400 font-sans">Each challenge has its own specific rules, but generally, fair play and sportsmanship are expected from all participants.</p>
                       </div>
                       <div>
                         <h3 className="font-semibold text-blue-300">How are disputes handled?</h3>
-                        <p className="text-gray-400">We have a dedicated team to handle disputes. If you encounter any issues, please report them immediately through the challenge interface.</p>
+                        <p className="text-gray-400 font-sans">We have a dedicated team to handle disputes. If you encounter any issues, please report them immediately through the challenge interface.</p>
                       </div>
                     </div>
                   </CardContent>
@@ -393,11 +393,11 @@ export default function ChallengePage() {
                     <div className="space-y-4">
                       <div>
                         <h3 className="font-semibold text-blue-300">How are prizes awarded?</h3>
-                        <p className="text-gray-400">Prizes are typically awarded to the top performers in each challenge. The exact distribution depends on the specific challenge rules.</p>
+                        <p className="text-gray-400 font-sans">Prizes are typically awarded to the top performers in each challenge. The exact distribution depends on the specific challenge rules.</p>
                       </div>
                       <div>
                         <h3 className="font-semibold text-blue-300">Are there any taxes on prizes?</h3>
-                        <p className="text-gray-400">Winners are responsible for any applicable taxes on their prizes. We recommend consulting with a tax professional for specific advice.</p>
+                        <p className="text-gray-400 font-sans">Winners are responsible for any applicable taxes on their prizes. We recommend consulting with a tax professional for specific advice.</p>
                       </div>
                     </div>
                   </CardContent>

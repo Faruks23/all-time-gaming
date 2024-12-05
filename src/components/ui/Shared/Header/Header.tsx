@@ -7,9 +7,9 @@ function Header() {
     <div>
   <header className="bg-gradient-to-r from-[#1a2030] to-[#2a3040] border-b border-[#3a4050]">
             <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-              <Link href="/" className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-300 hover:to-purple-500 transition-all duration-300">
+              <Link href="/" className="text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-300 hover:to-purple-500 transition-all duration-300">
                 <span className="flex items-center">
-                  <GamepadIcon size={32} className="mr-2 text-white" />
+                  {/* <GamepadIcon size={32} className="mr-2 text-white" /> */}
                   ATG
                 </span>
               </Link>
